@@ -1,0 +1,23 @@
+.main-navigation{
+  display: flex;
+
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  background: url(../../images/logos/inhabitent-logo-tent.svg);
+  // background-size: 50px;
+  height:33px;
+  width: 50px;
+  margin: 0;
+  background-size: 50px 33px;
+  overflow: hidden;
+
+}
+
+.site-branding {
+  h1 {
+
+  }
+}
