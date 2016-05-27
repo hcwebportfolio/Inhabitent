@@ -1,6 +1,6 @@
 .site-info{
     display: flex;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: 'novecento',sans-serif;
     padding: 1.5rem 0;
     justify-content: space-between;
     margin-left: auto;
@@ -15,13 +15,30 @@
     color: #fff;
 
 }
-.block{
+.block {
+
   .center {
     text-align: center;
   }
   img{
     width: 300px;
   }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  h3 {
+    color: #d99054;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+  }
+}
+
+  i{
+  padding-right: 5px;
+  font-size: 16px;
 }
 
 

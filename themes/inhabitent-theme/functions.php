@@ -83,6 +83,8 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function inhabitent_scripts() {
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
@@ -102,3 +104,25 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+
+
+function red_ajax_demo() {
+	// wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'blue_dog', get_template_directory_uri() , '/js/api-demo.js', array('jquery'), false, true );
+
+	wp_localize_script(' api_demo', 'red-vars', array(
+		 'ajax_url' => admin_url( 'admin-ajax.php' ),
+		 'comment_nonce' => wp_create_nonce( 'red_comment_status' ),
+		 'post_id' => get_the_ID()
+ ) );
+
+
+
+}
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_login_header');

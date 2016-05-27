@@ -13,16 +13,19 @@
 				<div class="site-info">
 				<div class="block">
 					<h3>Contact Info</h3>
-					<p><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
+					<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 					<p><a href="tel:5553434567891">778-456-7891</a></p>
+					<p><i class="fa fa-facebook-square"></i>
+						<i class="fa fa-twitter-square"></i>
+						<i class="fa fa-google-plus-square"></i></p>
 
 				</div>
 
 				<div class="block">
 					<h3>Buisness Hours</h3>
-					<p>Monday-Friday: 9am to 5pm</p>
-					<p>Saturday: 10am to 2pm</p>
-					<p>Sunday: Closed</p>
+					<p><span>Monday-Friday:</span> 9am to 5pm</p>
+					<p><span>Saturday:</span> 10am to 2pm</p>
+					<p><span>Sunday:</span> Closed</p>
 
 				</div>
 

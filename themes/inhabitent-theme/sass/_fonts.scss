@@ -3,8 +3,8 @@
 --------------------------------------------------------------*/
 @font-face {
     font-family: 'merriweatherbold';
-    src: url('merriweather-bold-webfont.woff2') format('woff2'),
-         url('merriweather-bold-webfont.woff') format('woff');
+    src: url('fonts/MerriWeather/merriweather-bold-webfont.woff2') format('woff2'),
+         url('fonts/MerriWeather/merriweather-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
@@ -15,8 +15,8 @@
 
 @font-face {
     font-family: 'merriweather';
-    src: url('merriweather-bolditalic-webfont.woff2') format('woff2'),
-         url('merriweather-bolditalic-webfont.woff') format('woff');
+    src: url('fonts/MerriWeather/merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/MerriWeather/merriweather-bolditalic-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'merriweather';
-    src: url('merriweather-light-webfont.woff2') format('woff2'),
-         url('merriweather-light-webfont.woff') format('woff');
+    src: url('fonts/MerriWeather/merriweather-light-webfont.woff2') format('woff2'),
+         url('fonts/MerriWeather/merriweather-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -39,9 +39,36 @@
 
 @font-face {
     font-family: 'merriweather';
-    src: url('merriweather-lightitalic-webfont.woff2') format('woff2'),
-         url('merriweather-lightitalic-webfont.woff') format('woff');
+    src: url('fonts/MerriWeather/merriweather-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/MerriWeather/merriweather-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 
 }
+
+
+
+    @font-face {
+        font-family: 'novecento';
+        src: url('../../fonts/novocento/novecentosanswide-demibold-webfont.eot') format('eot'),
+             url('../../fonts/novocento/novecentosanswide-demibold-webfont.svg') format('svg'),
+             url('../../fonts/novocento/novecentosanswide-demibold-webfont.ttf') format('ttf'),
+             url('../../fonts/novocento/novecentosanswide-demibold-webfont.woff') format('woff'),
+             url('../../fonts/novocento/novecentosanswide-demibold-webfont.woff2') format('woff2');
+
+        font-weight: bold;
+        font-style: normal;
+
+    }
+    @font-face {
+        font-family: 'novecento';
+        src: url('../../fonts/novocento/novecentosanswide-normal-webfont.eot') format('eot'),
+             url('../../fonts/novocento/novecentosanswide-normal-webfont.svg') format('svg'),
+             url('../../fonts/novocento/novecentosanswide-normal-webfont.ttf') format('ttf'),
+             url('../../fonts/novocento/novecentosanswide-normal-webfont.woff') format('woff'),
+             url('../../fonts/novocento/novecentosanswide-normal-webfont.woff2') format('woff2');
+
+        font-weight: normal;
+        font-style: normal;
+
+    }

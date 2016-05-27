@@ -14,6 +14,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+
+
 			<?php the_post_navigation(); ?>
 
 			<?php
