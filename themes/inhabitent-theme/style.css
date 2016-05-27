@@ -220,8 +220,32 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
+# Embedded Fo
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweatherbold';
+  src: url("merriweather-bold-webfont.woff2") format("woff2"), url("merriweather-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("merriweather-bolditalic-webfont.woff2") format("woff2"), url("merriweather-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("merriweather-light-webfont.woff2") format("woff2"), url("merriweather-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("merriweather-lightitalic-webfont.woff2") format("woff2"), url("merriweather-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -419,40 +443,37 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    position: absolute;
+    top: 1.5em;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      left: 100%; }
+    .main-navigation ul ul a {
+      width: 200px; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
+
+.main-navigation li {
+  float: left;
+  position: relative; }
+
+.main-navigation a {
+  display: block;
+  text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -656,18 +677,149 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.main-navigation {
-  display: -ms-flexbox;
-  display: flex; }
+.main-navigation a:hover {
+  color: #404040; }
 
 .site-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: url(../../images/logos/inhabitent-logo-tent.svg);
-  height: 33px;
-  width: 50px;
-  margin: 0;
-  background-size: 50px 33px;
-  overflow: hidden; }
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  position: fixed;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3; }
+
+.entry-title a {
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  left: 0;
+  padding: .75rem 1.5rem;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  position: absolute; }
+
+.entry-header {
+  position: relative; }
+
+.entry-meta {
+  background-color: #248a83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 4px 8px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase; }
+
+.black-btn {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.about-header {
+  height: 100vh; }
+
+.main-navigation li {
+  float: left;
+  padding-left: 1.5rem;
+  position: relative; }
+
+a:visited {
+  color: #248a83; }
+
+.tent-logo img {
+  width: 50px; }
+
+.product-grid-item .wp-post-image {
+  left: 50%;
+  max-height: 250px;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -52%);
+  width: auto; }
+
+.site-info {
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Novecento Sans Web,sans-serif;
+  padding: 1.5rem 0;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.site-footer {
+  background: url(../../images/dark-wood@2x.png);
+  background-size: 512px 512px;
+  height: 350px;
+  color: #fff; }
+
+.block .center {
+  text-align: center; }
+
+.block img {
+  width: 300px; }
+
+.product-icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .product-icon img {
+    width: 80px; }
+  .product-icon a {
+    text-decoration: none;
+    text-transform: uppercase; }
+
+.journal-picture img {
+  width: 380px; }
+
+.home h2 {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-align: center; }
+
+.home .home-hero {
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh; }
+
+.shop-stuff-container {
+  display: -ms-flexbox;
+  display: flex; }

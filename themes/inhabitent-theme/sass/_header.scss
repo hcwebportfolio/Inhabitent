@@ -1,23 +1,96 @@
-.main-navigation{
-  display: flex;
 
+.main-navigation {
+
+
+  a:hover {
+  color: #404040;
+  }
 }
-
 .site-header {
   display: flex;
   justify-content: space-between;
-  background: url(../../images/logos/inhabitent-logo-tent.svg);
-  // background-size: 50px;
-  height:33px;
-  width: 50px;
-  margin: 0;
-  background-size: 50px 33px;
-  overflow: hidden;
+    align-items: center;
+  background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 3;
 
 }
 
 .site-branding {
-  h1 {
 
+}
+
+//5 SOLO CAMPING ETC TITLES
+.entry-title a{
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #248a83;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0;
+    position: absolute;
+
+}
+
+.entry-header {
+  position: relative;
+}
+
+.entry-meta{
+background-color: #248a83;
+bottom: 0;
+color: #fff;
+display: inline-block;
+font-family: sans-serif;
+padding: 4px 8px;
+position: absolute;
+right: 0;
+text-transform: uppercase;
+}
+
+.black-btn{
+  background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.about-header {
+  height: 100vh;
+
+}
+
+.main-navigation li {
+    float: left;
+    padding-left: 1.5rem;
+    position: relative;
+
+  }
+
+  a:visited {
+    color: #248a83;
+}
+
+.tent-logo {
+  img{
+    width: 50px;
   }
 }

@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 ?><!DOCTYPE html>
@@ -25,7 +25,7 @@
 				<div class="site-branding">
 					<div class="tent-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
+								<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="" />
 						</a>
 					</div>
 

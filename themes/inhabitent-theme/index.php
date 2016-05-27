@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
@@ -39,3 +39,27 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+<!-- EXAMPLE
+
+class User {
+
+   private $first_name = 'John';
+   private $last_name = 'Smith';
+   public function get_first_name() {
+      return $this->first_name;
+   }
+   public function get_last_name() {
+      return $this->last_name;
+   }
+	 public function set_first_name() {
+		 if (!is_string()) {
+			 return;
+		 }
+		 $this ->first_name;
+	 }
+}
+$user = new User();
+echo $user->get_first_name;
+
+echo $user->first_name = 1; -->

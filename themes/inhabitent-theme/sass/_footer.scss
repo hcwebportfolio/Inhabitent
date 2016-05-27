@@ -1,0 +1,32 @@
+.site-info{
+    display: flex;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+.site-footer{
+    background: url(../../images/dark-wood@2x.png);
+    background-size: 512px 512px;
+    height: 350px;
+    color: #fff;
+
+}
+.block{
+  .center {
+    text-align: center;
+  }
+  img{
+    width: 300px;
+  }
+}
+
+
+// .container {
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 1120px;
+//   }

@@ -1,0 +1,51 @@
+.product-icon {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  img {
+    width: 80px;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+}
+.journal-picture {
+  img {
+    width: 380px;
+
+  }
+}
+.home h2 {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+    text-align: center;
+  }
+
+// .home-hero{
+  .home .home-hero {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh;
+  // background: url(../../images/home-hero.jpg);
+
+}
+
+.shop-stuff-container{
+  display: flex;
+
+}
