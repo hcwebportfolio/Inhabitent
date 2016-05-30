@@ -14,7 +14,7 @@ get_header(); ?>
 
       </section>
 			<h2>Shop Stuff</h2>
-			<section class="shop-stuff-container">
+			<section class="shop-stuff-container container">
 				<?php $product_types = get_terms(array( 'taxonomy' => 'product-type') );?>
 				<?php foreach ( $product_types as $product_type) : ?>
 						<div class="product-icon">

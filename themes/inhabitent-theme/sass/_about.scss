@@ -1,0 +1,30 @@
+.entry-title h1 {
+
+clear: both;
+font-family: Novecento Sans Web,sans-serif;
+letter-spacing: 2px;
+text-transform: uppercase;
+display: block;
+font-weight: bold;
+}
+
+.page-template-about .entry-content {
+    margin: 3rem auto;
+    max-width: 800px;
+  }
+
+.about-header{
+background-size: cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+}
+
+h1 {
+    align-self: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'novecento',sans-serif;
+    letter-spacing: 2px;
+}

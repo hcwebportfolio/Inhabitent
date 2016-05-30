@@ -4,7 +4,14 @@
  *
  * @package inhabitent_Theme
  */
+?>
 
+ <div class="contact-info">
+	 <p><i class="fa fa-phone"></i><a href="tel:5553434567891">778-456-7891</a></p>
+	
+
+ </div>
+<?php
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }

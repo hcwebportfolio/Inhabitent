@@ -1,7 +1,14 @@
 
+// Journal
+
+.journal-main{
+  width: 73%;
+}
+.sidebar{
+  width:27%;
+}
+
 .main-navigation {
-
-
   a:hover {
   color: #404040;
   }
@@ -12,8 +19,8 @@
     align-items: center;
   background-color: hsla(0,0%,100%,.85);
     border-bottom: 1px solid #e1e1e1;
-    padding: .5rem 0;
     position: fixed;
+    top: 30px;
     transition: top .5s linear;
     width: 100%;
     z-index: 3;
@@ -94,3 +101,25 @@ text-transform: uppercase;
     width: 50px;
   }
 }
+
+.site-header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .site-header {
+      background-color: hsla(0,0%,100%,.85);
+      border-bottom: 1px solid #e1e1e1;
+      padding: .5rem 0;
+      position: fixed;
+      transition: top .5s linear;
+      width: 100%;
+      z-index: 3;
+    }
+
+    .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
