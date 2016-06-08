@@ -20,15 +20,11 @@ get_header(); ?>
                   <?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 
                   <div class="product-type-container">
-                      <?php foreach ( $terms as $term ) :?>
-                          <div class="product-type-wrapper">
+  
                               <p>
-                                  <a href="<?php home_url(); ?>/inhabitent/product-type/<?php echo $term->slug; ?>" class="">
-                                      <?php echo $term->name ?> <!-- stuff -->
-                                  </a>
+                            <?php echo term_description(); ?>
                               </p>
-                          </div>
-                      <?php endforeach ?>
+
                   </div>
               </section>
           <?php endif; ?>

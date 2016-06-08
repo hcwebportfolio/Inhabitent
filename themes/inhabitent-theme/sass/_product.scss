@@ -9,6 +9,12 @@
 //     width: auto;
 // }
 
+.page-title {
+    clear: both;
+    font-family: 'novecento' sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 .product-grid{
     display: flex;
     flex-wrap: wrap;
@@ -21,8 +27,22 @@
     margin-bottom: 1.5rem;
   }
 
+.product-image img {
+  height: 200px;
+  object-fit: cover;
+
+
+}
+
 .product-info {
+  font-family:'merriweather'sans-serif;
+  font-weight: normal;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+.container {
+margin-left: auto;
+margin-right: auto;
+width: 1120px;
 }

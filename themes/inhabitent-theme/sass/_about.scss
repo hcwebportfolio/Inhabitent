@@ -1,11 +1,5 @@
-.entry-title h1 {
-
-clear: both;
-font-family: Novecento Sans Web,sans-serif;
-letter-spacing: 2px;
-text-transform: uppercase;
-display: block;
-font-weight: bold;
+.entry-title {
+display: none;
 }
 
 .page-template-about .entry-content {
@@ -14,17 +8,70 @@ font-weight: bold;
   }
 
 .about-header{
+display: flex;
+justify-content: center;
+align-items: center;
 background-size: cover;
 height: 100vh;
 display: flex;
 justify-content: center;
+
 }
 
 h1 {
     align-self: center;
-    color: white;
     text-transform: uppercase;
     font-size: 50px;
     font-family: 'novecento',sans-serif;
     letter-spacing: 2px;
+}
+
+.about-page-wrapper {
+  .entry-meta {
+    display: none;
+  }
+}
+
+.about-title{
+  font-size: 200px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: 'novecento',sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+}
+
+h3{
+  letter-spacing: 2px;
+  font-family: 'novecento',sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2f1339;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+span.s1{
+
+  font-family: 'merriweather',sans-serif;
+
+}
+
+.product-type-container {
+
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 500px;
+  a{
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+section.product-info.container {
+    display: flex;
+    flex-direction: column;
 }

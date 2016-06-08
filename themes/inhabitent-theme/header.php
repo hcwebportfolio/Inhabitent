@@ -8,6 +8,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
+
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -31,7 +32,10 @@
 
 
 				</div><!-- .site-branding -->
-
+					<i class="fa fa-search"></i>
+					<div class="nav-search">
+				  	<?php get_search_form(); ?>
+					</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

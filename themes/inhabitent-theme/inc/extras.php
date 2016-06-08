@@ -67,3 +67,18 @@ function inhabitent_filter_product_query( $query ) {
 		 $query->set( 'posts_per_page', 16 );
 	 } }
 add_action( 'pre_get_posts', 'inhabitent_filter_product_query' );
+
+//Custom Function to Get Archive Title
+
+function inhabitent_archive_title($title) {
+
+    if (is_post_type_archive('product')) {
+       $title = 'Shop Stuff';
+
+    } else if (is_tax('product-type')) {
+       $title = single_term_title();
+    }
+    return $title;
+
+}
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title');

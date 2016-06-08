@@ -29,6 +29,7 @@ get_header(); ?>
 									<?php echo $product_type->description; ?>
 								</p>
 								<a href=" <?php echo get_term_link($product_type, 'product-type') ?> "><?php echo $product_type->name; ?> &nbsp;Stuff</a>
+
 						</div>
 					<?php endforeach; ?>
 			</section>
@@ -36,19 +37,13 @@ get_header(); ?>
 			   $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
 			   $journal_posts = get_posts( $args ); // returns an array of posts
 			?>
-			<?php foreach ( $_posts as $post ) : setup_postdata( $post ); ?>
+			<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 			   <?php the_title(); ?>
 			<?php endforeach; wp_reset_postdata(); ?> -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<!-- <?php
-	   $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
-	   $journal_posts = get_posts( $args ); // returns an array of posts
-	?>
-	<?php foreach ( $_posts as $post ) : setup_postdata( $post ); ?>
-	   <?php the_title(); ?>
-	<?php endforeach; wp_reset_postdata(); ?> -->
+
 
 <h2>Inhabitent Journal</h2>
 <ul class="journal-post container">
@@ -72,6 +67,9 @@ setup_postdata( $post ); ?>
 </div>
 
 
+</div>
+
+
 </li>
 <?php
 endforeach;
@@ -79,6 +77,10 @@ wp_reset_postdata();
 ?>
 </ul>
 
+<section class="adventures container">
+<h2>Latest Adventures</h2>
+
+</section>
 
 <?php get_footer(); ?>
 

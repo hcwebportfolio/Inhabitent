@@ -7,11 +7,13 @@
  */
 
 get_header(); ?>
-
+<div class="about-page-wrapper">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <section class='about-header'>
-        <h1>About</h1>
+			<div class="about-title"
+				<h1>About</h1>
+			</div>
       </section>
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -30,6 +32,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
