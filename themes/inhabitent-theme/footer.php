@@ -12,9 +12,11 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 				<div class="block">
-					<h3>Contact Info</h3>
+					<h6>Contact Info</h6>
+					<div class="footer-contact">
 					<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 					<p><i class="fa fa-phone"></i><a href="tel:5553434567891">778-456-7891</a></p>
+				</div>
 					<p><i class="fa fa-facebook-square"></i>
 						<i class="fa fa-twitter-square"></i>
 						<i class="fa fa-google-plus-square"></i></p>
@@ -22,7 +24,7 @@
 				</div>
 
 				<div class="block">
-					<h3>Buisness Hours</h3>
+					<h6>Buisness Hours</h6>
 					<p><span>Monday-Friday:</span> 9am to 5pm</p>
 					<p><span>Saturday:</span> 10am to 2pm</p>
 					<p><span>Sunday:</span> Closed</p>

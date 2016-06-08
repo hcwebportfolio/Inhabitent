@@ -74,7 +74,6 @@ justify-content: space-between;
 text-align: center;
 
 }
-
 .journal-post{
   display: flex;
   justify-content: space-between;
@@ -91,4 +90,145 @@ home h2 {
     font-weight: 400;
     margin-bottom: 3.75rem;
     text-align: center;
+    font-family: 'novecento', sans-serif;
 }
+
+.front-page-posts{
+ display: flex;
+}
+
+// * Latest Adventures */
+
+.adventures {
+margin-bottom: 70px;
+h3 {
+  a {
+    color: white;
+    font-family: 'merriweather',sans-serif;
+    text-transform: none;
+    font-size: 2rem;
+    font-weight: 400;
+    &:hover {
+      color: #f0e4d1  ;
+    }
+  }
+}
+p {
+  padding-top: 40px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-height: 620px;
+  max-width: none;
+  width: auto;
+  z-index: -1;
+  position: relative;
+  display: block;
+}
+ul {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+  margin-left: 0;
+  li {
+    h3 a {
+      margin-bottom: 20px;
+    }
+    &:first-child {
+      width: 49%;
+      float: left;
+      h3 a {
+        font-size: 2.75rem;
+        line-height: 1;
+      }
+    }
+    &:nth-child(2) {
+      width: 49%;
+      float:right;
+      img {
+        height: 300px;
+        width: 100%;
+      }
+      h3 a {
+        font-size: 2.25rem;
+        line-height: 1;
+      }
+    }
+    &:nth-child(3), &:last-child {
+      width: 24%;
+      float: right;
+      margin-left: 1%;
+      margin-top: 1.75%;
+      font-size: 1rem;
+      img {
+        height: 300px;
+      }
+      h3 a {
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+    }
+  } // li
+} // ul
+} // .adventures
+
+.story-wrap {
+position: relative;
+overflow: hidden;
+display: flex;
+justify-content: center;
+.adventure-image{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%);
+  padding: 0;
+}
+.story-info {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 20px 10px;
+}
+}
+.readtag {
+border: 1px solid white;
+padding: 12.5px 25px;
+font-family: 'novecento', sans-serif;
+text-transform: uppercase;
+color: white;
+font-size: 0.9rem;
+&:hover {
+  background-color: #248a83;
+  color: white;
+  border: 1px solid #248a83;
+  outline: 0;
+}
+&:active {
+  outline: 0;
+}
+&:visited {
+  color: white;
+  &:hover {
+    color:white;
+  }
+}
+} //.readtag
+
+.button {
+padding: 12.5px 25px;
+font-family: 'novecento',sans-serif;
+text-transform: uppercase;
+color: white;
+font-size: 1.1rem;
+background-color: #248a83;
+&:hover {
+  background-color: #19625d;
+  color: white;
+}
+&:visited {
+  color: white;
+  &:hover {
+    color:white;
+  }
+}
+} // .button

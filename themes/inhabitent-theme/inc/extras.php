@@ -82,3 +82,10 @@ function inhabitent_archive_title($title) {
 
 }
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title');
+
+function new_excerpt_more($more) {
+		global $post;
+return '[...] <p class="readmore"> <a class="readmore" href="'. get_permalink($post->ID) .
+'"> Read More &#x2192; </a></p>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

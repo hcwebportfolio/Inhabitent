@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-
+<div class="journal-page-wrapper">
 	<div id="primary" class="content-area flex-container container">
 		<main id="main" class="site-main journal-main" role="main">
 
@@ -39,5 +39,6 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 		</div>
 	</div><!-- #primary -->
+</div><!-- journal-page-wrapper -->
 
 <?php get_footer(); ?>

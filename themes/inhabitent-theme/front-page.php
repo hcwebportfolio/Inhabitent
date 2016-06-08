@@ -46,41 +46,68 @@ get_header(); ?>
 
 
 <h2>Inhabitent Journal</h2>
+<div class="front-page-posts">
 <ul class="journal-post container">
-<?php
-$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
-$postslist = get_posts( $args );
-foreach ( $postslist as $post ) :
-setup_postdata( $post ); ?>
+	<?php
+	$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
+	$postslist = get_posts( $args );
+	foreach ( $postslist as $post ) :
+	setup_postdata( $post ); ?>
 
-<li >
-<div class="journal-picture">
-<?php the_post_thumbnail( 'large' ); ?>
-</div>
-
-<div class="journal-info">
-<span>
-<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-</span>
-<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-<a class="moretag" href="<?php the_permalink(); ?>">Read Entry</a>
-</div>
-
-
-</div>
-
-
-</li>
+	<li >
+		<div class="journal-picture">
+		<?php the_post_thumbnail( 'large' ); ?>
+		</div>
+			<div class="journal-info">
+			<span>
+			<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+			</span>
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<a class="moretag" href="<?php the_permalink(); ?>">Read Entry</a>
+			</div>
+	</li>
 <?php
 endforeach;
 wp_reset_postdata();
 ?>
 </ul>
 
-<section class="adventures container">
-<h2>Latest Adventures</h2>
+</div>
+<!-- Latest Adventures -->
 
-</section>
+           <h2>Latest Adventures</h2>
+           <section class="adventures container">
+
+               <ul class="clearfix">
+
+                   <?php
+                       $query = new WP_Query( array(
+                           'post_type' => 'adventure',
+                            'order' => 'ASC',
+                           'orderby' => 'date',
+                           'posts_per_page' => 4)
+                       );
+                       while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                       <li>
+                           <div class="story-wrap">
+                               <div class="adventure-image">
+                                   <?php the_post_thumbnail( 'full' ); ?>
+                               </div>
+                               <div class="story-info">
+                                   <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                   <a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
+                               </div>
+                           </div>
+                       </li>
+
+                   <?php endwhile;
+                                       wp_reset_postdata(); ?>
+               </ul>
+               <p class="clearfix">
+                   <a href="adventures" class="button">More Adventures</a>
+               </p>
+           </section><!-- .adventures -->
 
 <?php get_footer(); ?>
 
