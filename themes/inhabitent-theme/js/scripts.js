@@ -1,9 +1,9 @@
 
 jQuery(document).ready(function( $ ) {
 
-    $(".search-btn").on('click', function(){
+    $(".fa-search").on('click', function(){
         event.preventDefault();
-        $(".search-field").toggle('slide');
+        $("input[type=search]").toggle('slow');
     });
 
 });
