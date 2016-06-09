@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<h4>archive-product.php</h4>
+
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main" role="main">
 
@@ -20,15 +20,17 @@ get_header(); ?>
                   <?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 
                   <div class="product-type-container">
+										      <div class="product-type-wrapper">
                       <?php foreach ( $terms as $term ) :?>
-                          <div class="product-type-wrapper">
+
                               <p>
                                   <a href="<?php home_url(); ?>/inhabitent/product-type/<?php echo $term->slug; ?>" class="">
                                       <?php echo $term->name ?> <!-- stuff -->
                                   </a>
                               </p>
-                          </div>
+
                       <?php endforeach ?>
+										</div>
                   </div>
               </section>
           <?php endif; ?>

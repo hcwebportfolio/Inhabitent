@@ -6,7 +6,10 @@
 }
 
 //5 SOLO CAMPING ETC TITLES
-.entry-title a{
+.blog .entry-title {
+    display: block;
+  a{
+
   font-family: sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -20,14 +23,13 @@
     max-width: 75%;
     top: 0;
     position: absolute;
-
+  }
 }
-
 .entry-header {
   position: relative;
 }
 
-.entry-meta{
+.entry-meta {
 background-color: #248a83;
 bottom: 0;
 color: #fff;

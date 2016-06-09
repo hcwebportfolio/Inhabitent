@@ -1,6 +1,3 @@
-.entry-title {
-display: none;
-}
 
 .page-template-about .entry-content {
     margin: 3rem auto;
@@ -33,12 +30,12 @@ h1 {
 }
 
 .about-title{
+  font-weight: 700;
   font-size: 200px;
   letter-spacing: 2px;
-  font-weight: 700;
   font-family: 'novecento',sans-serif;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
 }
 
@@ -74,4 +71,8 @@ span.s1{
 section.product-info.container {
     display: flex;
     flex-direction: column;
+}
+
+.page-template-about p {
+  font-family: 'merriweather',sans-serif;
 }
