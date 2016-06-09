@@ -455,11 +455,12 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248a83;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #248a83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -892,9 +893,18 @@ section.product-info.container {
   margin-right: auto;
   width: 1120px; }
 
-.single-product {
+.single-product article {
   display: -ms-flexbox;
   display: flex; }
+
+.single-product h2 {
+  font-family: 'novecento',sans-serif;
+  font-size: 30px;
+  font-weight: normal; }
+
+.product-write-up {
+  font-family: 'merriweather',sans-serif;
+  font-size: 16px; }
 
 .site-info {
   display: -ms-flexbox;
@@ -956,6 +966,8 @@ span {
   padding: .75rem;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  .product-icon:hover {
+    border-color: #d99054; }
   .product-icon img {
     width: 80px; }
   .product-icon a {
@@ -976,8 +988,12 @@ span {
   .product-icon p {
     font-family: 'merriweather',sans-serif; }
 
-.journal-picture img {
-  width: 380px; }
+.journal-picture {
+  line-height: 0; }
+  .journal-picture img {
+    min-height: 250px;
+    max-height: 250px;
+    width: 380px; }
 
 .home h2 {
   font-size: 38.4px;
@@ -1036,6 +1052,33 @@ home h2 {
 .front-page-posts {
   display: -ms-flexbox;
   display: flex; }
+
+.journal-info {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding-bottom: 17px;
+  padding-left: 10px; }
+
+.journal-info span {
+  font-family: 'merriweather',sans-serif;
+  font-weight: normal;
+  font-size: .75rem; }
+
+.journal-info h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px; }
+
+a.moretag {
+  text-transform: uppercase;
+  border: 1px solid #000;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  color: #000; }
+  a.moretag:hover {
+    color: #fff;
+    background: #248a83;
+    border-color: #248a83; }
 
 .adventures {
   margin-bottom: 70px; }

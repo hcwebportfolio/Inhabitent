@@ -20,21 +20,20 @@ get_header(); ?>
 
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-					<div class="entry-meta">
-						<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
-					</div><!-- .entry-meta -->
+
 				</header><!-- .entry-header -->
 
-				<div class="entry-content">
-					<?php echo CFS()->get( 'price' ); ?>
-					<?php the_content(); ?>
-					<?php
-						wp_link_pages( array(
-							'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-							'after'  => '</div>',
-						) );
-					?>
-				</div><!-- .entry-content -->
+		<div class="entry-content">
+				<div class="single-product-title">
+				  	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</div>
+					<h2>
+		   	 		<?php echo CFS()->get( 'price' ); ?>
+				  </h2>
+				<div class="product-write-up">
+						<?php the_content(); ?>
+				</div>
+		</div><!-- .entry-content -->
 
 				<footer class="entry-footer">
 					<?php inhabitent_entry_footer(); ?>
