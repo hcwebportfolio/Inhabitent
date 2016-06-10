@@ -76,3 +76,10 @@ section.product-info.container {
 .page-template-about p {
   font-family: 'merriweather',sans-serif;
 }
+
+
+.wpcf7-submit input[type=submit]{
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  background: red;
+  }

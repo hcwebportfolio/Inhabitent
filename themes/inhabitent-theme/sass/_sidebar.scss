@@ -7,13 +7,15 @@ display:flex;
   margin-left: 60px;
   border-left: solid #e1e1e1 1px;
   padding-left: 50px;
-
   p{
    font-family: 'merriweather', sans-serif;
-}
-a{
+  }
+  a{
   text-decoration: none;
-}
+  }
+  ul {
+    list-style: none;
+  }
 }
 
 .widget-title {
