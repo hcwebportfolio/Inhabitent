@@ -777,6 +777,21 @@ fieldset {
 .search-field {
   display: none; }
 
+input[type=search] {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0; }
+
+.fa-search {
+  color: #248a83;
+  padding-left: 20px; }
+
+.search-field {
+  border: 0px;
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase; }
+
 .readmore a {
   padding: .75rem 1.5rem;
   border: 1px solid #000;
@@ -787,6 +802,9 @@ fieldset {
     background: #248a83;
     color: #fff;
     border: 1px solid #248a83; }
+
+.page-template-about .entry-title {
+  display: none; }
 
 .page-template-about .entry-content {
   margin: 3rem auto;
@@ -1212,6 +1230,7 @@ a.moretag {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
     padding: 0; }
   .story-wrap .story-info {
+    margin-top: 30px;
     position: absolute;
     top: 0;
     left: 20px;
@@ -1256,6 +1275,7 @@ a.moretag {
   display: flex; }
 
 .sidebar {
+  width: 23%;
   margin-left: 60px;
   border-left: solid #e1e1e1 1px;
   padding-left: 50px; }
@@ -1264,7 +1284,8 @@ a.moretag {
   .sidebar a {
     text-decoration: none; }
   .sidebar ul {
-    list-style: none; }
+    list-style: none;
+    margin: 0 auto; }
 
 .widget-title {
   letter-spacing: 2px;
@@ -1344,3 +1365,58 @@ a.moretag {
   min-width: 25%; }
   .single .widget-area ul {
     list-style: none; }
+
+.find-us-info {
+  font-family: 'merriweather', sans-serif; }
+
+input[type=button], input[type=reset], input[type=submit] {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'noveceto',sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.page-template-default .site-main {
+  width: 73%; }
+
+.search-page a {
+  position: static; }
+
+.error404 .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px; }
+
+.error404 .error-404 {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 20px;
+  margin-left: 60px; }
+  .error404 .error-404 a {
+    font-family: 'merriweather',sans-serif; }
+  .error404 .error-404 p {
+    font-family: 'merriweather',sans-serif; }
+
+.error404 .error-search .search-field {
+  display: block;
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  font-family: 'merriweather',sans-serif;
+  text-transform: none; }
+
+.error404 .widget-area {
+  padding-left: 30px; }
+  .error404 .widget-area p {
+    font-family: 'merriweather',sans-serif; }
+  .error404 .widget-area ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0; }

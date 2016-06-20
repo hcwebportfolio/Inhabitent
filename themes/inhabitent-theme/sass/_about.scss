@@ -1,9 +1,13 @@
 
-.page-template-about .entry-content {
+.page-template-about {
+  .entry-title {
+    display: none;
+  }
+  .entry-content {
     margin: 3rem auto;
     max-width: 800px;
   }
-
+}
 .about-header{
 display: flex;
 justify-content: center;

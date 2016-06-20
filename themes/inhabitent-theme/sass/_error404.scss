@@ -1,0 +1,39 @@
+.error404 {
+  .site-main {
+    display: flex;
+    margin-top: 55px;
+  }
+  .error-404 {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 20px;
+    margin-left: 60px;
+    a {
+      font-family: 'merriweather',sans-serif;
+    }
+    p {
+      font-family: 'merriweather',sans-serif;
+    }
+  }
+  .error-search {
+    .search-field {
+      display: block;
+      color: #666;
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      font-family: 'merriweather',sans-serif;
+      text-transform: none;
+    }
+  }
+  .widget-area {
+    padding-left: 30px;
+    p{
+      font-family: 'merriweather',sans-serif;
+    }
+    ul{
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
+}

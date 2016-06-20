@@ -1,0 +1,23 @@
+.find-us-info{
+  font-family: 'merriweather', sans-serif;
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'noveceto',sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.page-template-default {
+  .site-main {
+    width: 73%;
+  }
+}

@@ -66,6 +66,7 @@
       z-index: 3;
     }
 
+
     .container {
     margin-left: auto;
     margin-right: auto;
@@ -86,6 +87,22 @@
 
   .search-field {
     display: none;
+  }
+input[type=search] {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+  .fa-search {
+    color: #248a83;
+    padding-left: 20px;
+  }
+
+  .search-field{
+    border: 0px;
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
   }
 
   // button read more
